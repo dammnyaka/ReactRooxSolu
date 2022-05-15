@@ -8,11 +8,6 @@ const More = ({activeItem,frf}) => {
 //  console.log(activeItem)
   const [isReadonly, setIsReadonly] = useState(true);
   const [inputValue, setInputValue] = useState('')
-    //  for(const[key,value]of Object.entries(activeItem)){
-    //    console.log(`${key}:${value}`);
-    //    setOmg(`${key}:${value}`);
-    //  }
-       
 
   const addItem = () => {
   axios.post('https://jsonplaceholder.typicode.com/users/',activeItem).then(({data})=> {
